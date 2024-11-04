@@ -39,4 +39,142 @@ The first step is to load the sales data into Excel and perform an initial explo
 - Seasonal sales patterns
 
   #### Data Visualization
-  
+  ##### Pivot Tables
+![pivot table 1](https://github.com/user-attachments/assets/15453052-120f-40c7-869b-0cc555c7447b)
+
+![pivot table 2](https://github.com/user-attachments/assets/eda42d7f-7219-4141-a75a-9135bf9eece6)
+
+##### Charts
+![image](https://github.com/user-attachments/assets/546215eb-5f8c-4ba3-a981-ab93c8007213)
+
+![image](https://github.com/user-attachments/assets/026d3835-b5cd-4f42-a558-7d64a2692b33)
+
+![image](https://github.com/user-attachments/assets/4c9c2f65-66e8-4f09-a72f-936b3d93978e)
+
+![image](https://github.com/user-attachments/assets/2f5f9820-e8b1-4d23-8542-1672c1fe81bb)
+
+![image](https://github.com/user-attachments/assets/8d73da8e-cd09-414a-9b57-10d4e1941c6d)
+
+### SQL Analysis
+ Import the sales dataset  SQL Server environment and write SQL queries to answer specific business questions. This step provides a deeper understanding of the data and reveals additional insights.
+- Queries to Complete
+Total Sales by Product Category: Retrieve the total sales for each product category to identify high-performing categories.
+
+--- SQL
+create database lita_salesdata
+
+use lita_salesdata
+
+select*from[dbo].[salesdata]
+---
+#### Question 1 Retrieve the total sales of each product by category....
+---
+SELECT 
+    Product, 
+    SUM([Sales_amount]) AS TotalSales 
+FROM 
+    SalesData 
+GROUP BY 
+    Product 
+ORDER BY 
+    TotalSales DESC;
+---
+select * from Salesdata
+---
+#### Question 2 Find the number of sales transaction in each region
+---
+SELECT 
+    Region, 
+    COUNT(OrderID) AS Number_of_Sales_Transactions 
+FROM 
+    Salesdata 
+GROUP BY 
+    Region 
+ORDER BY 
+    Number_of_Sales_Transactions DESC;
+---
+ #### Question 3 Find the highest-selling product by total sales value
+---
+ SELECT TOP 1
+Product,
+SUM(Sales_amount) AS Total_Sales_Value
+FROM
+SalesData
+GROUP BY
+Product
+ORDER BY
+Total_Sales_Value DESC;
+
+select * from [dbo].[salesdata]
+---
+#### Question 4 Calculate total revenue per product
+---
+SELECT
+Product,
+SUM(Sales_amount) AS Total_Revenue
+FROM
+SalesData
+GROUP BY
+Product
+ORDER BY
+Total_Revenue DESC;
+---
+##### Qusetion 5 Calculate monthly sales totals for the current year
+---
+SELECT
+MONTH(OrderDate) AS Sales_Month,
+SUM(Sales_amount) AS Monthly_Sales_Total
+FROM
+SalesData
+WHERE
+YEAR(OrderDate) = YEAR(GETDATE())
+GROUP BY
+MONTH(OrderDate)
+ORDER BY
+Sales_Month;
+---
+#### Question 6 Find the top 5 customers by total purchase amount
+---
+SELECT TOP 5
+Customer_ID,
+SUM(Sales_amount) AS Total_Purchase_Amount
+FROM
+SalesData
+GROUP BY
+Customer_ID
+ORDER BY
+Total_Purchase_Amount DESC;
+---
+#### Question 7 Calculate the percentage of total sales contributed by each region
+---
+SELECT Region, 
+SUM(Sales_amount) AS Regional_Sales, 
+CONVERT(DECIMAL(5,2), ROUND((CAST(SUM(Sales_amount) AS DECIMAL(10, 2)) / (SELECT SUM(Sales_amount)
+FROM SalesData)) * 100, 2)) AS Sales_Percentage
+FROM 
+SalesData
+GROUP BY 
+Region
+ORDER BY 
+Regional_Sales DESC
+
+select * from [dbo].[salesdata]
+---
+#### Question 8 Identify products with no sales in the last quarter
+---
+SELECT 
+  Product
+FROM 
+  SalesData
+WHERE 
+  Product NOT IN (
+    SELECT 
+      Product
+    FROM 
+      SalesData
+    WHERE 
+      OrderDate >= DATEADD(quarter, -1, GETDATE())
+  )
+  AND OrderDate >= DATEADD(quarter, -1, GETDATE())
+---
+
