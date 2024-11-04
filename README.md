@@ -21,10 +21,22 @@ This project utilizes the following tools and technologies for data analysis and
 
 #### Project one: sales Performance Analysis for a Retail Store
 The first step is to load the sales data into Excel and perform an initial exploration using pivot tables and formulas.
-####Tasks
-Summarize Total Sales:
+#### Tasks
+##### Summarize Total Sales:
+- Use pivot tables to calculate total sales by:
+-  Product
+-  Region
+-  Month
+##### Calculate Key Metrics:
+- Use Excel formulas to calculate:
+- Average Sales per Product (using AVERAGEIF)
+- Total Revenue by Region (using SUMIF)
+- Create Additional Reports:
 
-Use pivot tables to calculate total sales by:
-Product
-Region
-Month
+##### Explore other interesting metrics that can provide more insights, such as:
+- Monthly sales growth
+- Top-selling products over time
+- Seasonal sales patterns
+
+  #### Data Visualization
+  
