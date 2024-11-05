@@ -38,6 +38,8 @@ This project utilizes the following tools and technologies for data analysis and
 
 ---
 ### Project one: Sales Performance Analysis for a Retail Store
+
+---
  #### Microsoft Excel
 The first step is to load the sales data into Excel and perform an initial exploration using pivot tables and formulas.
 #### Tasks
