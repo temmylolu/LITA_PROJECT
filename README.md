@@ -8,7 +8,7 @@
 
 [Tools Used](#Tools-Used)
 
-[Microsoft Excel](#MicrosoftExcel)
+[Microsoft Excel](#Microsoft-Excel)
 
 [SQL Analysis](#SQL-Analysis)
 
