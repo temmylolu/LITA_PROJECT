@@ -8,6 +8,12 @@
 
 [Tools Used](#Tools-Used)
 
+[Microsoft Excel](#MicrosoftExcel)
+
+[SQL Analysis](#SQL-Analysis)
+
+[Microsoft PowerBi](#Microsoft-PowerBi)
+
 [Data visualization](#Data-visualization)
 
 ---
