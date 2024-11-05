@@ -14,6 +14,12 @@
 
 [Project one](#Microsoft-PowerBi)
 
+[Project two](#Microsoft-Excel)
+
+[Project two](#SQL-Analysis)
+
+[Project two](#Microsoft-PowerBi)
+
 [Data visualization](#Data-visualization)
 
 [Conclusion](#Conclusion)
