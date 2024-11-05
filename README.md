@@ -8,10 +8,8 @@
 
 [Tools Used](#Tools-Used)
 
+[Data visualization](#Data-visualization)
 
- #### Microsoft Excel
-
-[Data Visualization]
 ---
 ### Project Overview
 The first project aims to analyze and visualize the sales performance of a retail store by exploring and uncovering key insights in the sales data. We’ll use Excel for initial exploration, SQL to answer business questions, and Power BI to create an interactive dashboard that presents our findings. The analysis will cover top-selling products, regional performance, monthly sales trends, and other key performance metrics.
@@ -51,7 +49,7 @@ The first step is to load the sales data into Excel and perform an initial explo
 - Seasonal sales patterns
 
 ---
-  #### Data Visualization
+  #### Data visualization
   ##### Pivot Tables
 ![pivot table 1](https://github.com/user-attachments/assets/15453052-120f-40c7-869b-0cc555c7447b)
 
