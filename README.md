@@ -10,9 +10,9 @@
 
 [Project one](#Microsoft-Excel)
 
-[SQL Analysis](#SQL-Analysis)
+[Project one](#SQL-Analysis)
 
-[Microsoft PowerBi](#Microsoft-PowerBi)
+[Project one](#Microsoft-PowerBi)
 
 [Data visualization](#Data-visualization)
 
