@@ -8,7 +8,7 @@
 
 [Tools Used](#Tools-Used)
 
-[Microsoft Excel](#Microsoft-Excel)
+[Project one](#Microsoft-Excel)
 
 [SQL Analysis](#SQL-Analysis)
 
