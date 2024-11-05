@@ -8,17 +8,11 @@
 
 [Tools Used](#Tools-Used)
 
-[Project one](#Microsoft-Excel)
+[Microsoft Excel](#Microsoft-Excel)
 
-[Project one](#SQL-Analysis)
+[SQL Analysis](#SQL-Analysis)
 
-[Project one](#Microsoft-PowerBi)
-
-[Project two](#Microsoft-Excel)
-
-[Project two](#SQL-Analysis)
-
-[Project two](#Microsoft-PowerBi)
+[Microsoft PowerBi](#Microsoft-PowerBi)
 
 [Data visualization](#Data-visualization)
 
